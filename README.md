@@ -11,12 +11,12 @@ make a new environment(recommended) and run...
 - Run python manage.py runserver
 - Navigate to http://127.0.0.1:8000/ in your browser
 
-### Dataset used - 
+### Dataset used:
 https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 
 
 
-### Some Sceenshots of This project"
+### Some Sceenshots of This project:
 
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture1.PNG)
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture2.PNG)

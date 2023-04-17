@@ -14,10 +14,9 @@ make a new environment(recommended) and run...
 ### Dataset used - 
 https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 
-### If you like this project, do give it a "Star" Thank you..
 
 
-### Some Sceenshots of This Webapp -
+### Some Sceenshots of This project"
 
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture1.PNG)
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture2.PNG)
@@ -26,3 +25,8 @@ https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture5.PNG)
 
 
+### If you like this project, plz Star it. 
+
+Sincerely
+
+Melanee

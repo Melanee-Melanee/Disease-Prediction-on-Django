@@ -11,6 +11,9 @@ make a new environment(recommended) and run...
 - Run python manage.py runserver
 - Navigate to http://127.0.0.1:8000/ in your browser
 
+### Check the [Readme.pdf](Readme.pdf) file for detailed information about the project 
+
+
 ### Dataset used:
 https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 

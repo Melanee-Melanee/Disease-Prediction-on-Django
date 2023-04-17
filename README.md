@@ -1,8 +1,7 @@
-### General Disease Prediction based on symptoms provided by patient- powered by Django & Machine Learning
+# A ml model deployed on Django framework to predict diseases based on symptoms
 
-
-# How To Use This
-First make sure PostgreSQL and pgadmin is install in your system. 
+# Setup: 
+First make sure PostgreSQL and pgadmin is installed in your system. 
 then you have to manually create a DB instance on PostgreSQL named "predico", better use PgAdmin for that.
 make a new environment(recommended) and run...
 
@@ -15,6 +14,9 @@ make a new environment(recommended) and run...
 ### Dataset used - 
 https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 
+### If you like this project, do give it a "Star" Thank you..
+
+
 ### Some Sceenshots of This Webapp -
 
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture1.PNG)
@@ -24,5 +26,3 @@ https://www.kaggle.com/neelima98/disease-prediction-using-machine-learning
 ![](https://github.com/anuj-glitch/Disease-Prediction-using-Django-and-machine-learning/blob/master/screenshots/Capture5.PNG)
 
 
-### ***Go to the [Readme.pdf](Readme.pdf) file for detailed information about the project & screenshots.***
-and if you like this project, do give it a "Star" Thank you..

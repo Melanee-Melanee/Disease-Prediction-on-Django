@@ -1,4 +1,4 @@
-# Disease Prediction System using machine learning
+# Disease Prediction System Using Machine Learning
 The aim of this project is to predict heart and Kidney disease using data mining techniques and machine learning algorithms.This project implements 6 classificiation models using scikit-learn: Logistic Regression, Naïve Bayes, Support Vector Classifier,KNN, Nerual Network and Decision Tree Model to investigate their performance on heart and kidney disease datasets obtained from the UCI data repository and from Kaggle.com.
 
 All the machine learning features can be viewed here: [Machine Learning features for Heart](predict_risk/machine_learning_models) and [Machine Learning features for Kidney](predict_risk_1/machine_learning_models)
@@ -13,7 +13,7 @@ It supports following features:
 
 
                                                                            
-# Setup:
+# Setup
 
 1. (optional) create virtual env ex. mkvirtualenv mytest_env
 2. pip install -r requirements.txt

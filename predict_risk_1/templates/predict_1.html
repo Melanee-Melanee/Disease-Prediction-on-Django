@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+<title>Medical Emergency Form a Responsive Widget Template :: w3layouts</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hidere_pathbar, 0); }, false); function hidere_pathbar(){ window.scrollTo(0,1); } </script>
+
+<link href="{% static 'css/style2.css' %}" rel="stylesheet" />
+
+<link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+<link href="//fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" />
+<link href="{% static 'css/now-ui-kit.css' %}" rel="stylesheet" />
+<link href="{% static 'css/medium-editor.min.css' %}" rel="stylesheet">
+<!--//fonts-->
+</head>
+<body style="background-image: re_path('{% static 'images/2.jpg' %}')">
+<!--background-->
+<nav class="navbar navbar-expand-lg navbar-transparent" >
+        <div class="container">
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" >
+                <ul class="navbar-nav nav-tabs">
+
+                    <li class="nav-item"><a href="{% re_path 'accounts:profile' pk=user_id %}" class="btn btn-neutral">Profile</a></li>
+                      <li class="nav-item"><a href="{% re_path 'accounts:logout' %}" class="btn btn-neutral">Logout</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+<h1>Predict your Chronic Kidney disease</h1>
+    <div class="bg-agile">
+	<div class="book-appointment">
+	<h2>Medical Information</h2>
+
+  {% if predicted %}
+<div class="card" role="alert">
+<div class="header-main">
+{% if result %}
+<h4 class="table-danger text-center">You have a risk of kidney disease</h4>
+{% else %}
+<h4 class="table-success  text-center">You do not have a risk of kidney disease</h4>
+{% endif %}
+</div>
+<div class="card-body">
+      <div class="table-responsive justify-content-center">
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th>Algorithm</th>
+                                   <th>Risk of Kidney Disease</th>
+                               </tr>
+                           </thead>
+                           <tbody>
+                               <tr class="{{colors.LR}}">
+                                   <td>Logistic Regression</td>
+                                   <td>{{predictions.LogisticRegression}}</td>
+                               </tr>
+                               <tr class={{colors.SVC}}>
+                                   <td>Support Vector Classifier</td>
+                                   <td>{{predictions.SVC}}</td>
+                               </tr>
+                               <tr class={{colors.NB}}>
+                                   <td>Naive Bayes</td>
+                                   <td>{{predictions.NaiveBayes}}</td>
+                               </tr>
+                               <tr class={{colors.DT}}>
+                                   <td>Decision Tree</td>
+                                   <td>{{predictions.DecisionTree}}</td>
+                               </tr>
+
+                               </tr>
+                               <tr class={{colors.NN}}>
+                                   <td>Neural Network</td>
+                                   <td>{{predictions.NeuralNetwork}}</td>
+                               </tr>
+
+                               </tr>
+                               <tr class={{colors.KNN}}>
+                                   <td>KNN</td>
+                                   <td>{{predictions.KNN}}</td>
+                               </tr>
+                           </tbody>
+
+                       </table>
+                   </div>
+               </div>
+             </div>
+
+  {% endif %}
+
+			<form method="post">
+        {% csrf_token %}
+        <div class="left-agileits-w3layouts same">
+          <div class="gaps">
+            <p>Age<p>
+            {{form.age}}
+          </div>
+
+					<div class="gaps">
+						<p>Blood Pressure</p>
+							{{form.bp}}
+					</div>
+
+          <div class="gaps">
+            <p>Specific Gravity</p>
+              {{form.sg}}
+          </div>
+
+					<div class="gaps">
+						<p>Albumin</p>
+							{{form.al}}
+					</div>
+
+					<div class="gaps">
+						<p>Sugar</p>
+							{{form.su}}
+					</div>
+
+					<div class="gaps">
+						<p>Red Blood Cells</p>
+						   {{form.rbc}}
+					</div>
+
+					<div class="gaps">
+						<p>Puss Cells</p>
+						{{form.pc}}
+					</div>
+
+					<div class="gaps">
+						<p>Puss Cells Clumps</p>
+						{{form.pcc}}
+					</div>
+
+					<div class="gaps">
+						<p>Bacteria</p>
+						{{form.ba}}
+					</div>
+
+					<div class="gaps">
+						<p>Red Glucose Random</p>
+						{{form.bgr}}
+					</div>
+
+               <div class="gaps">
+						<p>Blood Urea </p>
+				      {{form.bu}}
+					</div>
+
+             <div class="gaps">
+            <p>Serum Creatinine</p>
+              {{form.sc}}
+          </div>
+
+				</div>
+
+				<div class="right-agileinfo same">
+
+
+
+
+
+          <div class="gaps">
+            <p>Sodium</p>
+              {{form.sod}}
+          </div>
+
+           <div class="gaps">
+            <p>Potassium</p>
+              {{form.pot}}
+          </div>
+
+            <div class="gaps">
+            <p>Haemoglobin</p>
+              {{form.hemo}}
+          </div>
+
+              <div class="gaps">
+            <p>Packed Cell Volume</p>
+              {{form.pcv}}
+          </div>
+
+
+                    <div class="gaps">
+                    <p>White Blood cell count</p>
+                   {{form.wc}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Red Blood cell count</p>
+                   {{form.rc}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Hypertension</p>
+                   {{form.htn}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Diabetes mellitus</p>
+                   {{form.dm}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Coronary Artery Disease</p>
+                   {{form.cad}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Appetite</p>
+                   {{form.appet}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Pedal Edema</p>
+                   {{form.pe}}
+                   </div>
+
+                     <div class="gaps">
+                    <p>Anemia</p>
+                   {{form.ane}}
+                   </div>
+
+				</div>
+
+				<div class="clear"></div>
+				<input type="submit" value="Predict" class="btn btn-primary">
+			</form>
+		</div>
+   </div>
+   <!--copyright-->
+
+		<!--//copyright-->
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+		<!-- Calendar -->
+				<link rel="stylesheet" href="css/jquery-ui.css" />
+				<script src="js/jquery-ui.js"></script>
+
+			<!-- //Calendar -->
+
+</body>
+</html>
